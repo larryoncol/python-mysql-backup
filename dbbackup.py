@@ -8,7 +8,7 @@
 # Written by : Rahul Kumar
 # Website: http://tecadmin.net
 # Created date: Dec 03, 2013
-# Last modified: Aug 17, 2018 
+# Last modified: Aug 17, 2018
 # Tested with : Python 2.7.15 & Python 3.5
 # Script Revision: 1.4
 #
@@ -24,12 +24,12 @@ import pipes
 # MySQL database details to which backup to be done. Make sure below user having enough privileges to take databases backup.
 # To take multiple databases backup, create any file like /backup/dbnames.txt and put databases names one on each line and assigned to DB_NAME variable.
 
-DB_HOST = 'localhost' 
+DB_HOST = '10.135.185.222'
 DB_USER = 'root'
-DB_USER_PASSWORD = '_mysql_user_password_'
+DB_USER_PASSWORD = 'Hannah1985'
 #DB_NAME = '/backup/dbnameslist.txt'
-DB_NAME = 'db_name_to_backup'
-BACKUP_PATH = '/backup/dbbackup'
+DB_NAME = 'dbprd'
+BACKUP_PATH = '/home/infrauser/'
 
 # Getting current DateTime to create the separate backup folder like "20180817-123433".
 DATETIME = time.strftime('%Y%m%d-%H%M%S')
