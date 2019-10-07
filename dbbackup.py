@@ -26,13 +26,13 @@ import pipes
 
 DB_HOST = '10.135.185.222'
 DB_USER = 'root'
-DB_USER_PASSWORD = 'Hannah1985'
+DB_USER_PASSWORD = 'Hannah1985*'
 #DB_NAME = '/backup/dbnameslist.txt'
 DB_NAME = 'dbprd'
-BACKUP_PATH = '/home/infrauser/'
+BACKUP_PATH = '/mnt/db1volume/backups/database'
 
 # Getting current DateTime to create the separate backup folder like "20180817-123433".
-DATETIME = time.strftime('%Y%m%d-%H%M%S')
+DATETIME = time.strftime('%d%Y%m-%H%M%S')
 TODAYBACKUPPATH = BACKUP_PATH + '/' + DATETIME
 
 # Checking if backup folder already exists or not. If not exists will create it.
